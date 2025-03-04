@@ -3,7 +3,10 @@ import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import { Download, ArrowRight, Github, Linkedin, Twitter } from 'lucide-react';
 import Button from '../components/Button';
-
+// Import projects from Projects.tsx
+import { projects } from '../pages/Projects';  // Try adjusting this path if needed later
+// Select featured projects dynamically
+const featuredProjects = projects.slice(0, 3); // Change this logic if needed later
 const Home: React.FC = () => {
   return (
     <div className="pt-20">
@@ -151,6 +154,7 @@ const Home: React.FC = () => {
       </section>
       
       {/* Featured Projects Section */}
+      {/*
       <section className="section bg-gray-50 dark:bg-dark-800">
         <div className="container">
           <h2 className="section-title">Featured Projects</h2>
@@ -204,6 +208,22 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+      */}
+      <section className="py-16 md:py-24 bg-gray-100 dark:bg-gray-900">
+          <div className="container">
+            <h2 className="text-3xl font-bold text-center mb-10">Featured Projects</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              {featuredProjects.map((project, index) => (
+                <div key={index} className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+                  <img src={project.image} alt={project.title} className="w-full h-48 object-cover rounded-md" />
+                  <h3 className="text-xl font-semibold mt-4">{project.title}</h3>
+                  <p className="text-gray-600 dark:text-gray-300 mt-2">{project.description}</p>
+                  <a href={project.githubUrl} className="mt-4 inline-block text-blue-500 hover:text-blue-700">View Project</a>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
       
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-primary-600 to-secondary-600 text-white">
@@ -260,7 +280,7 @@ const featuredSkills = [
     description: 'Extracting insights and knowledge from structured and unstructured data.'
   }
 ];
-
+/*
 const featuredProjects = [
   {
     id: 'ai-chatbot',
@@ -283,6 +303,6 @@ const featuredProjects = [
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
     githubUrl: 'https://github.com'
   }
-];
+];*/
 
 export default Home;
