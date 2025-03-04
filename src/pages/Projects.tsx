@@ -102,15 +102,15 @@ const Projects: React.FC = () => {
 };
 
 // Sample data
-const tags = ['AI', 'Machine Learning', 'Web Development', 'Data Science', 'Research'];
+const tags = ['AI', 'Machine Learning', 'Web Development', 'Algorithms'];
 
-const projects = [
+export const projects = [
   {
     id: 'pathfinding-visualizer',
     title: 'Pathfinding Visualizer',
     description: 'An interactive visualization tool for pathfinding algorithms like BFS , DFS, A* & Dijkstra.',
     image: 'https://images.unsplash.com/photo-1696941495517-6327a4aef380?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWF6ZSUyMGZpbmRlcnxlbnwwfHwwfHx8MA%3D%3D',
-    tags: ['BFS', 'DFS', 'Dijkstra', 'A*', 'Pathfinding' ],
+    tags: ['BFS', 'DFS', 'Dijkstra', 'A*', 'Pathfinding', 'Algorithms' ],
     githubUrl: 'https://github.com/Rifat-Chowdhury/Pathfinding-Visualizer',
   },
   /*
@@ -129,7 +129,7 @@ const projects = [
     title: 'Social Media Post Generator',
     description: 'A bot with many functions such as extracting posts from social media and producing unique ideas, measuring post-performance metrics, offering advice to the user based on the supplied metrics, and decision tree intelligence on post selection.',
     image: 'https://images.unsplash.com/photo-1676287571987-2f98ced3e6c4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q29udGVudCUyMEdlbmVyYXRvcnxlbnwwfHwwfHx8MA%3D%3D',
-    tags: ['Post Generator', 'Decision Tree Intelligence', 'Social Media' ],
+    tags: ['Post Generator', 'Decision Tree Intelligence', 'Social Media', 'Algorithms' ],
     githubUrl: 'https://github.com/mc16dn/COSC-4P02-Group-Assignment',
     liveUrl: 'https://www.youtube.com/watch?v=0LPsPId1vhk&feature=youtu.be&themeRefresh=1'
   },
@@ -138,7 +138,7 @@ const projects = [
     title: 'Portfolio Website',
     description: 'A modern, responsive portfolio website built with React and Tailwind CSS. Features dark mode, animations, and a clean, professional design.',
     image: 'https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-    tags: ['Web Development', 'Javascript', 'React', 'Tailwind CSS' ],
+    tags: ['Web Development', 'Javascript', 'React', 'Tailwind CSS'],
     githubUrl: 'https://github.com',
     liveUrl: 'https://example.com'
   }
