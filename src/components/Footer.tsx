@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
               <span className="text-xl font-bold">Portfolio</span>
             </Link>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              Computer scientist specializing in E-Commerce Entrepreneurship, AI Storytelling Naratives & Software Innovation.
+              Computer Scientist specializing in E-Commerce Entrepreneurship, AI Storytelling Naratives & Software Innovation.
               Passionate about building scalable e-commerce businesses,
               leveraging AI for creative storytelling, and developing innovative software solutions.
             </p>

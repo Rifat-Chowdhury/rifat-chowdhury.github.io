@@ -102,7 +102,7 @@ const Projects: React.FC = () => {
 };
 
 // Sample data
-const tags = ['AI', 'Machine Learning', 'Web Development', 'Data Science', 'Research'];
+const tags = ['AI', 'Machine Learning', 'Web Development', 'Recursion Trees'];
 
 export const projects = [
   {
@@ -110,7 +110,7 @@ export const projects = [
     title: 'Pathfinding Visualizer',
     description: 'An interactive visualization tool for pathfinding algorithms like BFS , DFS, A* & Dijkstra.',
     image: 'https://images.unsplash.com/photo-1696941495517-6327a4aef380?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWF6ZSUyMGZpbmRlcnxlbnwwfHwwfHx8MA%3D%3D',
-    tags: ['BFS', 'DFS', 'Dijkstra', 'A*', 'Pathfinding' ],
+    tags: ['BFS', 'DFS', 'Dijkstra', 'A*', 'Pathfinding' , 'Recursion Trees'],
     githubUrl: 'https://github.com/Rifat-Chowdhury/Pathfinding-Visualizer',
   },
   /*
